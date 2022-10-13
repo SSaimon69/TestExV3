@@ -56,17 +56,6 @@ namespace MainApp
                 map.AddOrUpdate(masWord[n], 1, (key, value) => value + 1);
             });
 
-
-            //string? s = String.Empty;
-            //while ((s = sr.ReadLine()) != null)
-            //{
-            //    string[] mas = s.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-            //    foreach (string ma in mas)
-            //        if (map.ContainsKey(ma)) map[ma]++;
-            //        else map.Add(ma, 1);
-            //}
-
-
             return map;
         }
     }
