@@ -9,6 +9,7 @@ namespace MainApp
     {
         static void Main(string[] args)
         {
+            //Чтение файла
             string filePath = "text.txt";
             string text = "";
             using (StreamReader stream = new StreamReader(filePath))
@@ -16,14 +17,16 @@ namespace MainApp
                 text = stream.ReadToEnd();
             }
 
+            //Немного рефлексивной магии
             Type type = typeof(WordCalc.Calc);
             var a = type.GetMethod("CalculateWordSingle", BindingFlags.NonPublic | BindingFlags.Instance);
 
+            //Ставим часики и считаем в один поток
             Stopwatch calcWatchSingle = Stopwatch.StartNew();
             ConcurrentDictionary<string, int> map = (ConcurrentDictionary<string, int>)a.Invoke(new Calc(), new object[] { text });
             calcWatchSingle.Stop();
 
-
+            //Ставим часики и считаем в много поток
             Stopwatch calcWatchMulti = Stopwatch.StartNew();
             map = new Calc().CalculateWordMulti(text);
             calcWatchMulti.Stop();
@@ -42,21 +45,6 @@ namespace MainApp
                     sw.WriteLine(x.Key + " " + x.Value);
                 }
             }
-        }
-
-        public static ConcurrentDictionary<string, int> CalculateWord(string text)
-        {
-            ConcurrentDictionary<string, int> map = new ConcurrentDictionary<string, int>();
-            string[] separators = { ",", ".", " ", " ", ";", ":", "?", "!", "\"", "(", ")", "—", "–", "[", "]", "»", "«" };
-
-            string[] masWord = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-
-            Parallel.For(0, masWord.Length - 1, n =>
-            {
-                map.AddOrUpdate(masWord[n], 1, (key, value) => value + 1);
-            });
-
-            return map;
         }
     }
 }
