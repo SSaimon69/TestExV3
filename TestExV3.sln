@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp", "MainApp\MainApp.csproj", "{CD03A18C-FA89-4036-9520-E00DD0D3434C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCalc", "WordCalc\WordCalc.csproj", "{5231AE78-B622-482A-8BBD-A6EFAFDD86F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD03A18C-FA89-4036-9520-E00DD0D3434C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD03A18C-FA89-4036-9520-E00DD0D3434C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD03A18C-FA89-4036-9520-E00DD0D3434C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD03A18C-FA89-4036-9520-E00DD0D3434C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5231AE78-B622-482A-8BBD-A6EFAFDD86F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5231AE78-B622-482A-8BBD-A6EFAFDD86F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5231AE78-B622-482A-8BBD-A6EFAFDD86F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5231AE78-B622-482A-8BBD-A6EFAFDD86F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44E17646-7C2E-4879-ACF3-0B4EDF9FF863}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+C:\Users\semen\source\repos\MainApp\WordCalc\bin\Debug\net6.0\WordCalc.deps.json
+C:\Users\semen\source\repos\MainApp\WordCalc\bin\Debug\net6.0\WordCalc.dll
+C:\Users\semen\source\repos\MainApp\WordCalc\bin\Debug\net6.0\WordCalc.pdb
+C:\Users\semen\source\repos\MainApp\WordCalc\obj\Debug\net6.0\WordCalc.csproj.AssemblyReference.cache
+C:\Users\semen\source\repos\MainApp\WordCalc\obj\Debug\net6.0\WordCalc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\semen\source\repos\MainApp\WordCalc\obj\Debug\net6.0\WordCalc.AssemblyInfoInputs.cache
+C:\Users\semen\source\repos\MainApp\WordCalc\obj\Debug\net6.0\WordCalc.AssemblyInfo.cs
+C:\Users\semen\source\repos\MainApp\WordCalc\obj\Debug\net6.0\WordCalc.csproj.CoreCompileInputs.cache
+C:\Users\semen\source\repos\MainApp\WordCalc\obj\Debug\net6.0\WordCalc.dll
+C:\Users\semen\source\repos\MainApp\WordCalc\obj\Debug\net6.0\refint\WordCalc.dll
+C:\Users\semen\source\repos\MainApp\WordCalc\obj\Debug\net6.0\WordCalc.pdb
+C:\Users\semen\source\repos\MainApp\WordCalc\obj\Debug\net6.0\ref\WordCalc.dll
